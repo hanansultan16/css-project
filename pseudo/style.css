@@ -1,0 +1,30 @@
+.main p {
+    font-size: 30px;
+    color: blueviolet;
+}
+
+.main p:first-child {
+    font-size: 50px;
+    color: red;
+}
+
+.main p:last-child {
+    font-size: 20px;
+    color: green;
+}
+
+.main p:nth-child(2) {
+    font-size: 50px;
+    color: brown;
+}
+
+
+.hoverBox {
+    width: 500px;
+    height: 100px;
+    background-color: lightblue;}
+
+.hoverBox:hover {
+    background-color: lightcoral;
+    color: #fff;
+}
