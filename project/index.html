@@ -12,6 +12,7 @@
         <div class="top-bar">
           <div class="logo-container">
             <img src="images/Logo.png" alt="logo" class="logo" />
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
           </div>
           <div class="nav">
             <ul>
@@ -257,5 +258,11 @@
         </div>
       </div>
     </div>
+    <script>
+      function toggleMenu() {
+        const nav = document.querySelector(".nav");
+        nav.classList.toggle("show");
+      }
+    </script>
   </body>
 </html>

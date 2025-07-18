@@ -31,7 +31,7 @@ body {
 .nav li {
   list-style: none;
   display: inline-block;
-  padding: 0 15px;
+  padding: 10px 25px;
 }
 
 .nav li a {
@@ -49,6 +49,10 @@ body {
   border: 2px solid black;
   padding: 5px 10px;
   border-radius: 5px;
+  font-weight: 500;
+  font-size: 17px;
+  color: #212832;
+  
 }
 
 .header-content {
@@ -588,3 +592,254 @@ body {
   align-items: start;
   padding: 5px;
 }
+
+
+/* Tablet view (768px and below) */
+@media (max-width: 768px) {
+
+  .header {
+    padding: 20px 10px;
+  }
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav li {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin: 10px 20px 0 0;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-text {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .header-image {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .services .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services .cards {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0;
+  }
+
+  .destinations .top-destinations {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .destinations .destination-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0;
+  }
+
+  .book-trip {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .steps {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .steps h1 {
+    text-align: center;
+  }
+
+  .trip-image {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+
+
+  .testimonial-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-text {
+    width: 100%;
+    padding: 0 20px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0;
+    position: relative;
+  }
+
+  .testimonial-card img {
+    position: static;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .chris {
+    position: static;
+    margin: 20px 0;
+    padding: 24px;
+    width: 100%;
+    max-width: 300px;
+    filter: none;
+  }
+
+  .logos {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .logos .expedia {
+    width: 150px;
+    padding: 0 24px;
+  }
+
+  .subscribe {
+    margin: 20px;
+  }
+
+  .subscribe-section {
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  .subscribe-section h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .subscribe-form .email {
+    width: calc(100% - 150px);
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .subscribe-form .subscribe-btn {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-columns a {
+    text-align: center;
+  }
+
+  .footer-jadoo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+
+  .footer-jadoo h3 {
+    font-size: 40px;
+  }
+
+  .footer-jadoo p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-columns a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-columns a:hover {
+    color: #f1a501;
+  }
+
+  .footer-columns a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+
+}
+
+/* Mobile view (480px and below) */
+@media (max-width: 480px) {
+  .nav {
+    padding: 10px;
+  }
+}
+
+.menu-toggle {
+  display: none;
+}
+
